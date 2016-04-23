@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/TalkTo.iml" filepath="$PROJECT_DIR$/TalkTo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/process-button-library/library.iml" filepath="$PROJECT_DIR$/process-button-library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/process-button-library/process-button-library.iml" filepath="$PROJECT_DIR$/process-button-library/process-button-library.iml" />
     </modules>
   </component>
 </project>
