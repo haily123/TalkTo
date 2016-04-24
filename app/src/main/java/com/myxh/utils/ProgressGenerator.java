@@ -12,7 +12,7 @@ import java.util.Random;
 public class ProgressGenerator {
     public interface OnCompleteListener {
 
-        public void onComplete();
+        void onComplete();
     }
 
     private OnCompleteListener mListener;
@@ -41,6 +41,6 @@ public class ProgressGenerator {
     private Random random = new Random();
 
     private int generateDelay() {
-        return random.nextInt(1000);
+        return random.nextInt(500);
     }
 }

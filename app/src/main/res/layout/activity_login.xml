@@ -37,8 +37,8 @@
                 android:layout_height="match_parent"
                 android:drawableLeft="@drawable/login_icon_account"
                 android:drawablePadding="5dp"
-                android:hint="请输入用户名"
-                android:id="@+id/et_usrname_login"
+                android:hint="@string/login_hint_username"
+                android:id="@+id/et_username_login"
                 android:singleLine="true"
                 android:ellipsize="end"
                 android:background="#00000000"/>
@@ -57,14 +57,15 @@
                 android:layout_height="match_parent"
                 android:background="#00000000"
                 android:drawableLeft="@drawable/login_icon_password"
-                android:hint="请输入密码"
-                android:password="true"
+                android:hint="@string/login_hint_password"
+                android:inputType="textPassword"
                 android:id="@+id/et_password_login"
                 android:drawablePadding="5dp"
                 android:singleLine="true"
                 android:ellipsize="end"/>
         </LinearLayout>
         <com.dd.processbutton.iml.ActionProcessButton
+            android:id="@+id/btn_login"
             android:onClick="login_click"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -92,11 +93,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="还没有账号？"/>
+            android:text="@string/login_have_no_account"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="立即注册"
+            android:text="@string/login_goto_register"
             android:textColor="#00f"
             android:clickable="true"
             android:onClick="register_click"/>

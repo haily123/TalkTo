@@ -36,13 +36,15 @@ public class SplashActivity extends BaseActivity implements Animation.AnimationL
     @Override
     public void onAnimationStart(Animation animation) {
         if (!isNetConnected()) {
-            dialog("提示", "未连接网络，请前往设置", "去设置", "不了", android.R.drawable.ic_dialog_info, this, this);
+            showDialog("提示", "未连接网络，请前往设置", "去设置", "不了", android.R.drawable.ic_dialog_info, this, this);
         }
     }
 
     @Override
     public void onAnimationEnd(Animation animation) {
         // TODO Auto-generated method stub
+        Intent mainIntent = new Intent(this,LoginActivity.class);
+        startActivity(mainIntent);
 
     }
 
@@ -70,6 +72,7 @@ public class SplashActivity extends BaseActivity implements Animation.AnimationL
             case DialogInterface.BUTTON_POSITIVE:
                 Intent intent = new Intent(Settings.ACTION_SETTINGS);
                 startActivity(intent);
+                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                 this.finish();
                 break;
             case DialogInterface.BUTTON_NEGATIVE:
